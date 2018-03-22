@@ -7,24 +7,16 @@
 
 	<title>Rnso-portfolio</title>
 
-	<!-- Bootstrap core CSS -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Google fonts
-	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'> -->
-	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+<body data-spy="scroll" data-offset="0" data-target="#nav">
 
-	<!-- Smoothscroll JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<!--<script type="text/javascript" src="js/smoothscroll.js"></script>-->
-
-	<!-- Chart JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+	<div id='page-wrapper'></div>
+	<script type="text/javascript" src="index.bundle.js"></script>
 
 	<!-- defer loading of javascript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer="true"></script>
+
 	<script type="text/javascript">
 		function downloadJSAtOnload() {
 			var element = document.createElement("script");
@@ -38,17 +30,21 @@
 		else window.onload = downloadJSAtOnload;
 	</script>
 
-
-</head>
-
-<body data-spy="scroll" data-offset="0" data-target="#nav">
-
-	<div id='page-wrapper'></div>
-	<script type="text/javascript" src="index.bundle.js"></script>
 	<!-- Bootstrap core JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" defer="true"></script>
+
+	<!-- Chart JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js" defer="true"></script>
 
 </body>
+
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 <link href="app.css" rel="stylesheet">
 
 </html>
