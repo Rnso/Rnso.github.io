@@ -12,9 +12,9 @@
 
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Google fonts -->
+	<!-- Google fonts
 	<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'> -->
 	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 
 	<!-- Smoothscroll JS -->
@@ -24,14 +24,30 @@
 	<!-- Chart JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
-<link href="app.css" rel="stylesheet"></head>
+	<!-- defer loading of javascript -->
+	<script type="text/javascript">
+		function downloadJSAtOnload() {
+			var element = document.createElement("script");
+			element.src = "js/smoothscroll.js";
+			document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+	</script>
+
+	<link href="app.css" rel="stylesheet">
+</head>
 
 <body data-spy="scroll" data-offset="0" data-target="#nav">
 
 	<div id='page-wrapper'></div>
 
-<!-- Bootstrap core JS -->
+	<!-- Bootstrap core JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="index.bundle.js"></script></body>
+	<script type="text/javascript" src="index.bundle.js"></script>
+</body>
 
 </html>
